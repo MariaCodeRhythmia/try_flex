@@ -1,0 +1,105 @@
+html,body{
+  font-family: sans-serif;
+  height: 100%;
+}
+
+.page {
+min-height: 100%;
+display: flex;
+flex-direction: column;
+margin: 0 auto;
+max-width: 1100px;
+
+}
+.contant{
+  flex: 1 1 auto;
+}
+
+/* HEADER */
+
+.header {
+background: rgb(246, 242, 187);
+}
+.header_container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 60px;
+
+}
+.headeer_title {
+
+}
+.header_list {
+  font-size: 12px;
+	letter-spacing: 3px;
+}
+.header_logo{
+  height: 100px;
+  width: 200px;
+  background: rgba(3, 2, 3, 0.39);
+  border-radius: 10px;
+}
+.content_body {
+display: flex;
+flex-direction: column;
+background: rgba(207, 219, 146, 0.39);
+}
+
+/* CARD CONTEINER */
+
+.card_content {
+background: white;
+}
+.card_wrap {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+margin: 20px;
+}
+
+/* CARD  */
+
+.card {
+  height: 200px;
+  width: 200px;
+  background: rgba(192, 193, 198, 0.73);
+  border-radius: 20px;
+  padding: 2px;
+  margin: 10px;
+}
+.card_logo {
+height: 80px;
+width: 100px;
+background: rgba(77, 79, 68, 0.55);
+border-radius: 20px;
+  padding: 10px;
+}
+.card_body {
+color: white;
+font-size: 12px;
+letter-spacing: 4px;
+}
+.card_title {
+  padding: 10px;
+font-weight: 800;
+}
+.card_text {
+  padding: 10px;
+  font-weight: 200;
+}
+
+/* FOTER */
+
+.container_footer {
+display: flex;
+justify-content: center;
+align-items:center;
+background: rgb(217, 249, 90);
+padding: 10px;
+}
+.text_footer {
+  font-size: 12px;
+	letter-spacing: 3px;
+}
