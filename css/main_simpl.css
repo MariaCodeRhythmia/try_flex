@@ -9,66 +9,70 @@ display: flex;
 flex-direction: column;
 margin: 0 auto;
 max-width: 1100px;
-border: 2px solid rgb(249, 10, 10);
-padding: 2px;
+
 }
 .contant{
-  flex: 1 1 auto;
-  border: 2px solid rgb(10,249,  10);
-  padding: 2px;
+flex: 1 1 auto;
+
 }
 
 /* HEADER */
 
 .header {
 background: rgb(246, 242, 187);
-border: 2px solid red;
-padding: 2px;
-
 }
 .header_container {
 display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 20px 60px;
-border: 2px solid rgb(10,200,200);
-padding: 2px;
-padding: 2px;
 
 }
 .headeer_title {
 
 }
-.header_body{
-  border: 2px solid rgb(10,200,50);
-padding: 2px;
-}
 .header_list {
-  font-size: 12px;
-	letter-spacing: 3px;
-  border: 2px solid rgb(200,200,200);
-  padding: 2px;
+font-size: 12px;
+letter-spacing: 3px;
+
+}
+.header_list li{
+  padding: 3px;
 }
 .header_logo{
 height: 100px;
 width: 200px;
-border: 2px solid rgba(3, 2, 3, 0.39);
+background: rgba(3, 2, 3, 0.39);
 border-radius: 10px;
-padding: 2px;
 }
 .content_body {
 display: flex;
 flex-direction: column;
-background: rgba(207, 219, 146, 0.39);
-padding: 2px;
+background: rgba(207, 207, 206, 0.39);
+}
+/* text_content_ */
+.text_content {
+display: flex;
+padding: 3px 20px;
+margin: 10px;
 }
 
-/* CARD CONTEINER */
+.text_content_text {
+padding: 20px;
+}
+
+.text_content_img {
+width: 60%;
+background: rgba(191, 240, 18, 0.88);
+border-radius: 15px;
+
+}
+
+/*card_content*/
 
 .card_content {
-background: white;
-border: 2px solid black;
-padding: 2px;
+background: rgb(160,160,160);
+
 }
 .card_wrap {
 display: flex;
@@ -76,33 +80,33 @@ flex-direction: row;
 flex-wrap: wrap;
 justify-content: center;
 margin: 20px;
-padding: 2px;
+
 }
 
 /* CARD  */
 
 .card {
-height: 200px;
-width: 200px;
-border: 2px solid rgba(192, 193, 198, 0.73);
-border-radius: 20px;
-padding: 2px;
-margin: 10px;
-padding: 2px;
-}
-.card_logo {
-height: 80px;
-width: 100px;
-border: 2px solid rgba(77, 79, 68, 0.55);
+background: rgba(192, 193, 198, 0.73);
 border-radius: 20px;
 padding: 10px;
-padding: 2px;
+margin: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.card_logo {
+height: 80px;
+width: 70%;
+background: rgba(77, 79, 68, 0.55);
+border-radius: 20px;
+padding: 10px;
 }
 .card_body {
-color: gray;
+color: white;
 font-size: 12px;
 letter-spacing: 4px;
-padding: 2px;
 }
 .card_title {
 padding: 10px;
@@ -120,10 +124,15 @@ display: flex;
 justify-content: center;
 align-items:center;
 background: rgb(217, 249, 90);
-  border: 2px solid rgb(50,200,200);
-  padding: 10px;
+padding: 10px;
 }
 .text_footer {
-  font-size: 12px;
-	letter-spacing: 3px;
+font-size: 12px;
+letter-spacing: 3px;
+}
+@media (max-width:350px) {
+  .text_content{
+    flex-direction: column;
+
+  }
 }
